@@ -1,0 +1,245 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@font-face{
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {   /*  define cor de fundo da pagina */
+	background-color: #dddddd;    /*  define tom da cor do fundo da pagina  */
+	color: rgba(0, 0, 0, 0.7);   /*  define a cor e a transparencia da letra na pagina */
+	font-family: Arial, sans-serif;
+	background: url("../_imagens/_imgteste6.jpg") no-repeat;
+         opacity : 0.9; 
+}
+
+div#interface{
+	width: 900px;
+	background-color: #ffffff;
+	margin:-20px auto 0px auto;
+	box-shadow: 0px 0px 10px black rgba(0,0,0,.5);
+	padding: 10px;
+	
+}
+	
+p {    /*  adiciona paragrafo */
+	text-align: justify;   /*  justifica alinhamento deixa tudo alinhado */
+	text-indent: 25px;     /*  define a distancia paragrafo */
+	font-size: 13pt;
+	color: #4d0000;
+	background-color: #ffffff;
+	
+}  
+
+a{
+	color: #0000cc; 
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+header#cabecalho img#icone { /* posiciona a imagem no menu*/
+
+	position: relative;
+	left: 720px;
+	top: -170px;
+}
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+}
+
+header#cabecalho h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 60pt;
+	color: #b30000;
+	text-shadow:1px 1px 1px rgba(0,0,0, .6);
+	padding: opx;
+	margin-bottom: 0px;
+       
+}
+
+header#cabecalho h2{
+        background-color: #cc0000;
+        width: 900px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20pt;
+	color: #e6e6ff;
+	
+	
+}
+
+figure.foto-legenda{   /* formatação de imagens com legenda */
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+/* formatação do menu*/
+nav#menu {
+	display: block;
+}
+
+nav#menu ul{/*define a posição do menu dentro da pagina*/
+	list-style:none;
+	text-transform:uppercase;
+	position: absolute;
+	top: -15px;
+	left: 580px;
+	
+}
+nav#menu li {/*retangulo cinza transforma em botao*/
+	display:inline-block;
+	background:#990000;
+	padding: 10px;
+	margin:2px;
+	transition:background-color 1s;
+	
+	
+}
+nav#menu li:hover {
+	background-color: #ff0000;	
+}
+
+nav#menu h1 {/*some co as escritas referentes as tags*/
+	display:none;
+	
+}
+nav#menu a { /* muda a cor da escrita e tira sublinhado do menu*/
+	color: #e6f0ff;
+	text-decoration: none;
+}
+nav#menu a:hover {/* muda a cor quando passar o mouse por cima*/
+	color:#e6f0ff;
+	text-decoration: underline;	
+}
+
+section#corpo{
+	display: block;
+	width: 500px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+        
+}
+section#corpo1{
+	display: block;
+	width: 425px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+section#corpo2{
+	display: block;
+	width: 850px;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}	
+
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #000080;
+	margin-bottom: 0px;
+	margin-top: 0px;
+        
+}
+
+.direita{
+	text-align:right;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #0000ff;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12px;
+	color: #660000;
+}
+
+aside#lateral{
+	display: block;
+	width: 350px;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+aside#lateral h1{
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+	padding: 10px;
+	margin-top: 0px;
+}
+aside#lateral1{
+	display: block;
+	width: 425px;
+	float: right;
+	padding: -50px;
+	margin-top: -17px;
+        border-right: 1px solid #606060;
+}
+
+aside#lateral h2{
+	background-color: #606060;
+	font-size: 12pt;
+	color: #ffffff;
+}
+aside#lateral1 h2{
+	font-size: 12pt;
+	color: #606060;
+	background-color: #66a3ff;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 10px 10px 10px;
+	
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+	
+}
+footer#rodape p {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
