@@ -26,6 +26,8 @@
 		<li ><a href="fotos.html">Decoração</a></li>
 		<li><a href="multimidia.html">Diversos</a></li>
 		<li><a href="fale-conosco.html">Vendas</a></li>
+                <li><a href="cadastro.php">cadastro</a></li>
+
 	</ul>
 	</nav>
 </header>
