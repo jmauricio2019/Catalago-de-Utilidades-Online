@@ -36,6 +36,41 @@ class Banco
         }
         }  
     }
+    public function login()
+    {
+        session_start();
+        if(isset($_POST['btn_entrar'])){
+        $login = $_POST['login'];
+        $senha = $_POST['senha'];
+
+        try {
+            $conecta= new PDO("mysql:host=127.0.0.1;port=3306;dbname=catalogo_online","root","");
+            $conecta->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $dados=$conecta->query("SELECT * FROM  cadastro");
+            foreach ($dados as $linha){
+                if($linha['login']==$login && $linha['senha']==$senha )
+                {
+                    $_SESSION['nome']= $linha['nome'];
+                    header("location:logadocomsenha.php");
+                }
+                }
+                if($linha['usuario']!=$login || $linha['senha']!=$senha )
+                {
+                    echo '<script language="javascript">';
+                    echo 'alert("Usuário ou senha Incorreto")';
+                    echo '</script>';
+                }
+                    
+        }//fecha try
+        catch (PDOException $erro) 
+        {
+            echo '<script language="javascript">';
+            echo 'alert("Algum erro no banco")';
+            echo '</script>';
+        }       
+        }
+    }
+    
     }
 ?>
 
