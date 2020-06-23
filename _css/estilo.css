@@ -6,11 +6,11 @@
 }
 
 body {   /*  define cor de fundo da pagina */
-	background-color: #dddddd;    /*  define tom da cor do fundo da pagina  */
-	color: rgba(0, 0, 0, 0.7);   /*  define a cor e a transparencia da letra na pagina */
+	background-color: #ff0000;    /*  define tom da cor do fundo da pagina  */
+	color: rgba(0, 0, 0, 0);   /*  define a cor e a transparencia da letra na pagina */
 	font-family: Arial, sans-serif;
-	background: url("../_imagens/_imgteste6.jpg") no-repeat;
-         opacity : 0.9; 
+	/*background: url("../_imagens/_imgfundo.jpg") no-repeat;*/
+         /*opacity : 0.9; */
 }
 
 div#interface{
